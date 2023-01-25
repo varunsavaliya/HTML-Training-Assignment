@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.horizonal-nav {
+    margin-top: 20px;
+}
+
+.search-icon {
+    width: 18px;
+    margin: 0 18px 0 0;
+}
+
+.d-flex .left p,
+.d-flex .right p {
+    display: inline;
+    font-size: 16px;
+}
+
+.menu-icon {
+    margin: 0 25px 0 0;
+}
+
+.header-logo {
+    width: 150px;
+    margin: 0 76px 0 0;
+}
+
+.right .downward-arrow {
+    margin: 0 0 0 15px;
+    width: 10px;
+}
+
+.right p {
+    margin: 0 0 0 12px;
+}
+
+.right .profile-image {
+    width: 44px;
+    margin: 0 0 0 23px;
+}
+
+.side-nav {
+    display: inline;
+    /* width: 205px; */
+}
+
+.side-nav ul {
+    list-style: none;
+    margin-left: -14px;
+}
+
+.side-nav ul li {
+    margin-bottom: 50px;
+}
+
+.side-nav ul li:first-child {
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+}
+
+.side-nav ul li a img {
+    width: 22px;
+    margin: 0 15px 0 0;
+}
+
+.side-nav ul li a p {
+    display: inline;
+    font-size: 16px;
+    margin: 0 0 32px 0;
+    text-align: center;
+    color: #3a3a3a;
+    vertical-align: middle;
+}
+
+.side-nav ul .active {
+    background-color: #fff3f4;
+    padding: 14px 60px 14px 18px;
+    border-radius: 5px;
+    /* margin-left: -16px; */
+    /* margin-bottom: 36px; */
+}
+
+.side-nav ul .active p {
+    color: #c8242f;
+}
+
+.form-control {
+    display: inline;
+}
+
+
+/* dashboard styling */
+
+.dashboard {
+    display: inline;
+}

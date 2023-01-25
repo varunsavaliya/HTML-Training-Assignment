@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.hero-image {
+    /* height: 350px; */
+    width: 430px;
+    border-radius: 50%;
+    border: 20px solid #FFFFFF;
+    box-shadow: 0px 4px 31px #0000000A;
+    opacity: 1;
+    margin: 95px 72px 0 131px;
+}
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.header-logo {
+    /* height: 58px; */
+    width: 229px;
+}
+
+.right {
+    margin: 80px 0 0 0;
+}
+
+.header-logo {
+    margin: 0px 0 19px 0;
+}
+
+.header-description {
+    font-size: 30px;
+    margin-bottom: 19px;
+}
+
+.header-description .red {
+    color: #c8242f;
+}
+
+.right .login-text {
+    margin-bottom: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+}
+
+.login-form .input-box {
+    background-color: #FFFFFF;
+    border: 1px solid #ADADAD;
+    padding: 11px;
+    text-align: left;
+    margin-bottom: 27px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #c8242f;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    width: 118px;
+    height: 35px;
+    cursor: pointer;
+    /* margin-bottom: 18px;s */
+}
+
+.login-form a {
+    color: #ADADAD;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0 0 0 100px;
+}
+
+.register-text {
+    color: #ADADAD;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.register-text a {
+    color: #c8242f;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1199px) {
+    .hero-image {
+        width: 335px;
+        margin: 97px 72px 0 75px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .hero-image {
+        width: 279px;
+        margin: 174px 40px 0 39px;
+    }
+    .header-logo {
+        width: 177px;
+    }
+    .header-description {
+        font-size: 23px;
+        margin-bottom: 19px;
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 216px;
+    }
+    input[type="submit"] {
+        font-size: 14px;
+        border-radius: 17px;
+        width: 88px;
+        /* margin-bottom: 18px; */
+    }
+    .login-form a {
+        font-size: 14px;
+        margin: 0 0 0 12px;
+    }
+    .register-text {
+        margin-top: 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hero-image {
+        display: none;
+    }
+    .right {
+        margin: 30px 0 0 0;
+    }
+    .right div {
+        align-items: center !important;
+    }
+    .header-logo {
+        width: 234px;
+    }
+    .header-description {
+        font-size: 26px;
+        margin-bottom: 19px;
+        text-align: center;
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 373px;
+    }
+    .login-form a {
+        font-size: 18px;
+        margin: 0 0 0 105px;
+    }
+    input[type="submit"] {
+        width: 120px;
+        height: 39px;
+        font-size: 18px;
+    }
+    .register-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .login-form {
+        width: 337px;
+    }
+    .login-form .input-box {
+        padding: 8px;
+        margin-bottom: 25px;
+    }
+    input[type="submit"] {
+        width: 96px;
+        height: 38px;
+        font-size: 16px;
+    }
+    .login-form a,
+    .register-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .login-form {
+        width: 280px;
+    }
+    .login-form .input-box {
+        padding: 9px;
+        margin-bottom: 25px;
+    }
+    input[type="submit"] {
+        width: 100px;
+        height: 38px;
+        font-size: 16px;
+    }
+    .register-text {
+        font-size: 16px;
+    }
+    .login-form a {
+        font-size: 16px;
+        margin: 0 0 0 48px;
+    }
+}
