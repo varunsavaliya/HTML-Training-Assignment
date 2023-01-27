@@ -12,6 +12,7 @@
 
 <body>
     <div class="container">
+        <!-- horizontal nav bar -->
         <div class="horizonal-nav">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="left">
@@ -31,52 +32,278 @@
                 </div>
             </div>
         </div>
-        <div class="side-nav">
-            <div class="d-flex">
-                <ul id="allBtn">
-                    <li class=" active button">
-                        <a href="#"><img src="images/dashboard-active.svg" alt="">
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li class="button">
-                        <a href="#"><img src="images/graph-default.svg" alt="">
-                            <p>Analysis</p>
-                        </a>
-                    </li>
-                    <li class="button">
-                        <a href="#"><img src="images/inbox-default.svg" alt="">
-                            <p>Inbox</p>
-                        </a>
-                    </li>
-                    <li class="button">
-                        <a href="#"><img src="images/clock-default.svg" alt="">
-                            <p>History</p>
-                        </a>
-                    </li>
-                    <li class="button">
-                        <a href="#"><img src="images/user-default.svg" alt="">
-                            <p>Users</p>
-                        </a>
-                    </li>
-                    <li class="button">
-                        <a href="#"><img src="images/maintenance-default.svg" alt="">
-                            <p>Maintanance</p>
-                        </a>
-                    </li>
-                    <li class="button">
-                        <a href="#"><img src="images/setting-default.svg" alt="">
-                            <p>Settings</p>
-                        </a>
-                    </li>
-                </ul>
+
+
+        <!-- side nav bar -->
+        <div class="side-nav row">
+            <div class="col-3">
+                <nav class="navbar">
+                    <ul id="allBtn nav navbar-nav">
+                        <li class=" active button nav-item">
+                            <a href="#"><img src="images/dashboard-active.svg" alt="">
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="button">
+                            <a href="#"><img src="images/graph-default.svg" alt="">
+                                <p>Analysis</p>
+                            </a>
+                        </li>
+                        <li class="button">
+                            <a href="#"><img src="images/inbox-default.svg" alt="">
+                                <p>Inbox</p>
+                            </a>
+                        </li>
+                        <li class="button">
+                            <a href="#"><img src="images/clock-default.svg" alt="">
+                                <p>History</p>
+                            </a>
+                        </li>
+                        <li class="button">
+                            <a href="#"><img src="images/user-default.svg" alt="">
+                                <p>Users</p>
+                            </a>
+                        </li>
+                        <li class="button">
+                            <a href="#"><img src="images/maintenance-default.svg" alt="">
+                                <p>Maintanance</p>
+                            </a>
+                        </li>
+                        <li class="button">
+                            <a href="#"><img src="images/setting-default.svg" alt="">
+                                <p>Settings</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- dashboard design -->
+            <div class="col-9">
+                <div class="dashboard">
+                    <h1>Dashboard</h1>
+                    <div class="container">
+                        <div class="row card-container">
+                            <div class="col-md">
+                                <div class="d-flex card-items">
+                                    <div class="icon">
+                                        <img src="images/star.svg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>23,456</h2>
+                                        <p>New Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="d-flex card-items">
+                                    <div class="icon">
+                                        <img src="images/new-product.svg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>2345</h2>
+                                        <p>Added Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="d-flex card-items">
+                                    <div class="icon">
+                                        <img src="images/total-product.svg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>32,456</h2>
+                                        <p>Total Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="d-flex card-items">
+                                    <div class="icon">
+                                        <img src="images/dollar-filled.svg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>5678</h2>
+                                        <p>Today's scale</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="d-flex card-items">
+                                    <div class="icon">
+                                        <img src="images/money-bag.svg" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <h2>33,5342</h2>
+                                        <p>Total sale</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="sales">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="left">
+                                            <h3>Sales</h3>
+                                        </div>
+                                        <div class="right">
+                                            <p>Weekly</p>
+                                            <p>Monthly</p>
+                                            <p class="active-text">Yearly</p>
+                                        </div>
+                                    </div>
+                                    <div class="graph">
+                                        <img src="images/data-graph.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="sales-country">
+                                    <h3>Sales by Country</h3>
+                                    <div class="pie">
+                                        <img src="images/pie-chart.svg" alt="">
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="usa">
+                                                <div class="d-flex">
+                                                    <div class="red rounded-circle"></div>
+                                                    <p>United States of America</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="canada">
+                                                <div class="d-flex">
+                                                    <div class="green rounded-circle"></div>
+                                                    <p>Canada</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="russia">
+                                                <div class="d-flex">
+                                                    <div class="orange rounded-circle"></div>
+                                                    <p>Russia</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="india">
+                                                <div class="d-flex">
+                                                    <div class="yellow rounded-circle"></div>
+                                                    <p>India</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="invoice d-flex justify-content-between">
+                                <h3>Invoices</h3>
+                                <p>View all</p>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">INVOICE</th>
+                                        <th scope="col">COMPANY NAME</th>
+                                        <th scope="col">EMAIL</th>
+                                        <th scope="col">DUE DATE</th>
+                                        <th scope="col">STATUS</th>
+                                        <th scope="col">AMOUNT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>651535</td>
+                                        <td>Public Adjusting Firm</td>
+                                        <td>georgia.young@example.com</td>
+                                        <td>24 May, 2020</td>
+                                        <td><span class="badge badge-paid bg-success">Paid</span></td>
+                                        <td>$47,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>558612</td>
+                                        <td>Other</td>
+                                        <td>jessica.hanson@example.com</td>
+                                        <td>24 May, 2020</td>
+                                        <td><span class="badge badge-paid bg-success">Paid</span></td>
+                                        <td>$98,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>558612</td>
+                                        <td>Vendor</td>
+                                        <td>alma.lawson@example.com</td>
+                                        <td>8 Sep, 2020</td>
+                                        <td><span class="badge badge-paid bg-success">Paid</span></td>
+                                        <td>$20,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>558612</td>
+                                        <td>Property Management Company</td>
+                                        <td>kenzi.lawson@example.com</td>
+                                        <td>22 Oct, 2020</td>
+                                        <td><span class="badge badge-paid bg-success">Paid</span></td>
+                                        <td>$10,570</td>
+                                    </tr>
+                                    <tr>
+                                        <td>651535</td>
+                                        <td>Subcontractor Company</td>
+                                        <td>jackson.graham@example.com</td>
+                                        <td>1 Feb, 2020</td>
+                                        <td><span class="badge badge-failed bg-success">Paid</span></td>
+                                        <td>$10,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>653518</td>
+                                        <td>Mortgage Company</td>
+                                        <td>felicia.reid@example.com</td>
+                                        <td>22 Oct, 2020</td>
+                                        <td><span class="badge badge-pending bg-success">Paid</span></td>
+                                        <td>$12,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>487441</td>
+                                        <td>TPA</td>
+                                        <td>dolores.chambers@example.com</td>
+                                        <td>21 Sep, 2020</td>
+                                        <td><span class="badge badge-paid bg-success">Paid</span></td>
+                                        <td>$11,170</td>
+                                    </tr>
+                                    <tr>
+                                        <td>267400</td>
+                                        <td>Fire Department</td>
+                                        <td>nevaeh.simmons@example.com</td>
+                                        <td>17 Oct, 2020</td>
+                                        <td><span class="badge badge-failed bg-success">Paid</span></td>
+                                        <td>$28,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>449003</td>
+                                        <td>Insurance Carrier</td>
+                                        <td>curtis.weaver@example.com</td>
+                                        <td>21 Sep, 2020</td>
+                                        <td><span class="badge badge-paid bg-success">Paid</span></td>
+                                        <td>$10,000</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="dashboard">
-        <p>sjfgajdj</p>
-    </div>
-    <script src="js/dashboard.js"></script>
+    <!-- <script src="js/dashboard.js"></script> -->
 </body>
 
 </html>
