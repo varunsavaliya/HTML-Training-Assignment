@@ -183,6 +183,12 @@ input {
     display: inline;
 }
 
+.form-check :checked {
+    color: #C8242F;
+    border-color: #C8242F;
+    background-color: #C8242F;
+}
+
 input[type=radio] {
     color: #C8242F !important;
     margin-right: 11px;

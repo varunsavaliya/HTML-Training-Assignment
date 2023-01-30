@@ -12,6 +12,11 @@ p {
     margin: 0 18px 0 0;
 }
 
+.left button {
+    border: none;
+    background-color: #ffffff;
+}
+
 .d-flex .left p,
 .d-flex .right p {
     display: inline;
@@ -19,7 +24,23 @@ p {
 }
 
 .menu-icon {
-    margin: 0 25px 0 0;
+    /* margin: 0 25px 0 0; */
+    cursor: pointer;
+}
+
+.left .hamberger .closeIcon {
+    display: none;
+}
+
+.menu {
+    transform: translateX(-200%);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+
+.showMenu {
+    display: block;
+    transform: translateX(0);
 }
 
 .header-logo {
@@ -68,16 +89,16 @@ p {
     margin-bottom: 5px;
 }
 
-.side-nav ul li a {
+.side-nav ul li {
     text-decoration: none;
 }
 
-.side-nav ul li a img {
+.side-nav ul li img {
     width: 22px;
     margin: 0 15px 0 0;
 }
 
-.side-nav ul li a p {
+.side-nav ul li p {
     display: inline;
     font-size: 16px;
     margin: 0 0 32px 0;
@@ -111,6 +132,11 @@ p {
     padding: 29px 0px 0 0px;
     margin-top: 23px;
     margin-left: -86px;
+}
+
+.dashboard-big-design {
+    margin-top: 7px;
+    margin-left: 44px;
 }
 
 .dashboard h1 {
@@ -288,4 +314,47 @@ p {
 .badge-failed {
     background-color: #FFF5F5 !important;
     color: #FF4545;
+}
+
+@media screen and (max-width:991px) {
+    .header-logo {
+        width: 143px;
+        margin: 0 42px 0 0;
+    }
+    .d-flex .left p,
+    .d-flex .right p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header-logo {
+        width: 134px;
+        margin: 0 19px 0 0;
+    }
+    .header-logo {
+        width: 134px;
+        margin: 0 19px 0 0;
+    }
+    .menu-icon {
+        width: 20px;
+    }
+    .d-flex .left p,
+    .d-flex .right p {
+        display: none;
+    }
+    .right img:first-child {
+        width: 19px;
+    }
+    .right .profile-image {
+        width: 39px;
+        margin: 0 -7px 0 12px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .header-logo {
+        width: 106px;
+        margin: 0 13px 0 0;
+    }
 }
