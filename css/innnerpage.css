@@ -123,10 +123,11 @@ input {
     outline: none !important;
 }
 
-.main-form form label {
+.main-form form h3 {
     color: #3E3E3E;
     font-size: 20px;
     font-weight: 600;
+    margin: 10px 0;
 }
 
 .main-form form select {
@@ -135,4 +136,153 @@ input {
 
 .main-form form .two-column {
     margin: 17px 0 10px 0;
+}
+
+.designation-text {
+    color: #c8242f;
+}
+
+.designation-input {
+    border: 1px solid #C8242F;
+}
+
+::placeholder {
+    color: #ADADAD;
+}
+
+.upload-btn {
+    display: inline;
+    width: 128px;
+    height: 42px;
+    border: 1px solid #C8242F;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.upload-btn img {
+    margin-right: 9px;
+}
+
+.other-design h4 {
+    font-size: 17px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.other-design p {
+    display: inline;
+    color: #ADADAD;
+}
+
+.form-check {
+    padding-left: 0.5em;
+}
+
+.radio-btns {
+    display: inline;
+}
+
+input[type=radio] {
+    color: #C8242F !important;
+    margin-right: 11px;
+}
+
+.snackbar {
+    column-gap: 2rem;
+    margin-bottom: 20px;
+}
+
+.snackbar img {
+    width: 6%;
+    margin-right: 5px;
+}
+
+.error-snack {
+    border: 1px solid #C8242F;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.error-snack p {
+    color: #FF3535;
+    vertical-align: middle;
+}
+
+.info-snack {
+    border: 1px solid #00B9E1;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.info-snack p {
+    color: #00B9E1;
+    vertical-align: middle;
+}
+
+.warning-snack {
+    border: 1px solid #FFA800;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.warning-snack p {
+    color: #FFA800;
+    vertical-align: middle;
+}
+
+.success-snack {
+    border: 1px solid #00AF27;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.success-snack p {
+    color: #00AF27;
+    vertical-align: middle;
+}
+
+.btn-bg {
+    background-color: #C8242F;
+    color: #ffffff;
+    border: 1px solid #C8242F;
+    border-radius: 20px;
+    padding: 6px 21px;
+    display: inline;
+    margin-right: 10px;
+}
+
+.btn-trans {
+    background-color: #ffffff;
+    border: 1px solid #C8242F;
+    color: #C8242F;
+    display: inline;
+}
+
+.tabs .tab {
+    margin-right: 10px;
+    font-size: 13px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.active-tab {
+    color: #C8242F !important;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+}
+
+hr {
+    margin: -1rem 0;
+}
+
+.tab-text {
+    margin-top: 2rem;
+}
+
+.tab-text p {
+    color: #3E3E3E;
+    font-size: 14px;
 }

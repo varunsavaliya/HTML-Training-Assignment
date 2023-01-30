@@ -84,7 +84,7 @@
                     <h1>Analysis</h1>
                     <div class="main-form">
                         <form>
-                            <label for="exampleInputEmail1" class="form-label">One Column</label>
+                            <h3>One Column</h3>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
                             </div>
@@ -102,7 +102,7 @@
                             <textarea class="form-control" placeholder="Multiple line" id="floatingTextarea2" style="height: 100px"></textarea>
                             <!-- </div> -->
 
-                            <label for="exampleInputEmail1" class="form-label two-column">Two Column</label>
+                            <h3>Two Column</h3>
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mb-3">
@@ -111,7 +111,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        <input type="usename" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" value="johndoe">
                                     </div>
                                 </div>
 
@@ -119,7 +119,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="password">
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -130,19 +130,162 @@
                                         <option value="3">Three</option>
                                       </select>
 
-                                    <div class="form-floating mb-3">
+                                    <!-- demo mail-box with floating title (not working perfectly) -->
+
+                                    <!-- <div class="form-floating mb-3">
                                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                         <label for="floatingInput">Email address</label>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
-                    </div>
 
-                    </form>
+
+
+                            <!-- trial -->
+                            <div class="col-md-12">
+                                <h3>Three Column</h3>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" />
+                                            <label for="floatingInputEmail">Focus</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Password" id="floatingInputPassword" aria-label="Password" />
+                                            <label for="floatingInputPassword">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputDisabled" disabled placeholder="disabled" aria-label="disabled" style="border: 1px dashed #adadad" />
+                                            <label for="floatingInput">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <h3>Four Column</h3>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control designation-input" aria-describedby="validationServer03Feedback" value="UI Designer" required />
+                                            <label for="validationServer03" class="form-label">Designation</label>
+                                            <div class="form-text designation-text">Enter Valid data</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control name-input" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Name" required />
+                                            <label for="validationServer03" class="form-label">Name</label>
+                                            <div class="form-text name-text">Enter your full Name as per ID</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="floatingUserName" placeholder="johndoe" />
+                                            <label for="floatingUserName">Username</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <select class="form-select" aria-label="Default">
+                                  <option selected>Dropdown</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                                            <label for="">Dropdown</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 other-design">
+                                <h3>Other Design Elements</h3>
+                                <h4>File upload</h4>
+                                <div class="mb-3">
+                                    <button class="upload-btn" onclick="document.getElementById('getFile').click()"><img src="images/cloud-upload-icon.svg" alt="" />Upload</button>
+                                    <input type='file' id="getFile" style="display:none">
+                                    <p>No file choosen</p>
+                                </div>
+                                <h4>Radio Buttons</h4>
+                                <div class="form-check radio-btns">
+                                    <input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Option 1
+                                    </label>
+                                </div>
+                                <div class="form-check radio-btns">
+                                    <input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Option 2
+                                    </label>
+                                </div>
+                                <h4>Checkbox</h4>
+                                <div class="form-check radio-btns">
+                                    <input class="radio-btn" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Option 1
+                                    </label>
+                                </div>
+                                <div class="form-check radio-btns">
+                                    <input class="radio-btn" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Option 2
+                                    </label>
+                                </div>
+                                <h4>Snackbar</h4>
+                                <div class="row snackbar gx-0">
+                                    <div class="col error-snack">
+                                        <img src="images/error-icon.svg" alt="">
+                                        <p>This is an error message</p>
+                                    </div>
+                                    <div class="col info-snack ">
+                                        <img src="images/info-icon.svg" alt="">
+                                        <p>This is an information message</p>
+                                    </div>
+                                </div>
+                                <div class="row snackbar gx-0">
+                                    <div class="col warning-snack">
+                                        <img src="images/warning-icon.svg" alt="">
+                                        <p>This is warning message</p>
+                                    </div>
+                                    <div class="col success-snack">
+                                        <img src="images/success-icon.svg" alt="">
+                                        <p>This is success message</p>
+                                    </div>
+                                </div>
+                                <h4>Call to action</h4>
+                                <button class="btn-bg">Primary</button>
+                                <button class="btn-bg btn-trans">Secondary</button>
+                                <h4>Tabs</h4>
+                                <div class="tabs d-flex">
+                                    <p class="tab active-tab underline">Tab 1</p>
+                                    <p class="tab">Tab 2</p>
+                                    <p class="tab">Tab 3</p>
+                                </div>
+                                <hr>
+                                <div class="tab-text">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                        sheets containing
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
                 </div>
+
             </div>
+
+            </form>
         </div>
+    </div>
+    </div>
     </div>
     <!-- <script src="js/dashboard.js"></script> -->
 </body>
