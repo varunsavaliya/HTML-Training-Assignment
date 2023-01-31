@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
     <title>Innerpage</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/innnerpage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,7 +19,10 @@
         <div class="horizonal-nav">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="left">
-                    <img src="images/menu-bar.svg" class="menu-icon" alt="menu-bar">
+                    <button class="hamberger">
+                    <img src="images/menu-bar.svg" class="menu-icon" id="menu-icon" alt="menu-bar" onclick="openCloseMenu()" class="">
+                    <i class="closeIcon material-icons" onclick="openCloseMenu()" >close</i>
+                </button>
                     <img src="images/header-logo.svg" class="header-logo" alt="">
                     <!-- <div class="search"> -->
                     <img src="images/search-icon.svg" class="search-icon" alt="">
@@ -35,259 +41,247 @@
 
 
         <!-- side nav bar -->
-        <div class="side-nav row">
-            <div class="col-3">
-                <nav class="navbar">
-                    <ul id="allBtn nav navbar-nav">
-                        <li class="button nav-item">
-                            <a href="#"><img src="images/dashboard-default.svg" alt="">
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="active button">
-                            <a href="#"><img src="images/graph-active.svg" alt="">
-                                <p>Analysis</p>
-                            </a>
-                        </li>
-                        <li class="button">
-                            <a href="#"><img src="images/inbox-default.svg" alt="">
-                                <p>Inbox</p>
-                            </a>
-                        </li>
-                        <li class="button">
-                            <a href="#"><img src="images/clock-default.svg" alt="">
-                                <p>History</p>
-                            </a>
-                        </li>
-                        <li class="button">
-                            <a href="#"><img src="images/user-default.svg" alt="">
-                                <p>Users</p>
-                            </a>
-                        </li>
-                        <li class="button">
-                            <a href="#"><img src="images/maintenance-default.svg" alt="">
-                                <p>Maintanance</p>
-                            </a>
-                        </li>
-                        <li class="button">
-                            <a href="#"><img src="images/setting-default.svg" alt="">
-                                <p>Settings</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="container">
+            <div class="side-nav row" id="side-nav">
+                <div class=" on">
+                    <nav class="navbar">
+                        <ul class="menu nav navbar-nav" id="allBtn">
+                            <li class=" button nav-item">
+                                <a href="dashboard.html"><img src="images/dashboard-default.svg" alt="">
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="active button nav-item">
+                                <a href="innerpage.html"><img src="images/graph-active.svg" alt="">
+                                    <p>Analysis</p>
+                                </a>
+                            </li>
+                            <li class="button nav-item">
+                                <a href="#"><img src="images/inbox-default.svg" alt="">
+                                    <p>Inbox</p>
+                                </a>
+                            </li>
+                            <li class="button nav-item">
+                                <a href="#"><img src="images/clock-default.svg" alt="">
+                                    <p>History</p>
+                                </a>
+                            </li>
+                            <li class="button nav-item">
+                                <a href="#"><img src="images/user-default.svg" alt="">
+                                    <p>Users</p>
+                                </a>
+                            </li>
+                            <li class="button nav-item">
+                                <a href="#"><img src="images/maintenance-default.svg" alt="">
+                                    <p>Maintanance</p>
+                                </a>
+                            </li>
+                            <li class="button nav-item">
+                                <a href="#"><img src="images/setting-default.svg" alt="">
+                                    <p>Settings</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
-            <!-- innerpage design design -->
-            <div class="col-9">
-                <div class="analysis">
-                    <h1>Analysis</h1>
-                    <div class="main-form">
-                        <form>
-                            <h3>One Column</h3>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-                            </div>
+                <!-- innerpage design design -->
+                <div class="analysis-big">
+                    <div class="analysis analysis-big-design">
+                        <h1>Analysis</h1>
+                        <div class="main-form">
+                            <form>
+                                <h3>One Column</h3>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                </div>
 
-                            <!-- Dropdown select -->
-                            <select class="form-select" aria-label="Default select example">
+                                <!-- Dropdown select -->
+                                <select class="form-select" aria-label="Default select example">
                                 <option selected disabled>Dropdown</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                               </select>
 
-                            <!-- textarea -->
-                            <!-- <div class="form-floating"> -->
-                            <textarea class="form-control" placeholder="Multiple line" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <!-- </div> -->
+                                <textarea class="form-control" placeholder="Multiple line" id="floatingTextarea2" style="height: 100px"></textarea>
 
-                            <h3>Two Column</h3>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                <h3>Two Column</h3>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <input type="usename" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" value="johndoe">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="mb-3">
+                                            <input type="usename" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" value="johndoe">
+                                        </div>
                                     </div>
-                                </div>
 
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="password">
-                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <select class="form-select" aria-label="Default select example">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="mb-3">
+                                            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="password">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <select class="form-select" aria-label="Default select example">
                                         <option selected disabled>Dropdown</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                       </select>
+                                    </div>
 
-                                    <!-- demo mail-box with floating title (not working perfectly) -->
-
-                                    <!-- <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                        <label for="floatingInput">Email address</label>
-                                    </div> -->
                                 </div>
 
-                            </div>
-
-
-
-                            <!-- trial -->
-                            <div class="col-md-12">
-                                <h3>Three Column</h3>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" />
-                                            <label for="floatingInputEmail">Focus</label>
+                                <div class="col-md-12">
+                                    <h3>Three Column</h3>
+                                    <div class="row third-column">
+                                        <div class=" col-md-4 col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" />
+                                                <label for="floatingInputEmail">Focus</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Password" id="floatingInputPassword" aria-label="Password" />
-                                            <label for="floatingInputPassword">Password</label>
+                                        <div class=" col-md-4 col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" placeholder="Password" id="floatingInputPassword" aria-label="Password" />
+                                                <label for="floatingInputPassword">Password</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="floatingInputDisabled" disabled placeholder="disabled" aria-label="disabled" style="border: 1px dashed #adadad" />
-                                            <label for="floatingInput">Disabled</label>
+                                        <div class=" col-md-4 col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInputDisabled" disabled placeholder="disabled" aria-label="disabled" style="border: 1px dashed #adadad" />
+                                                <label for="floatingInput">Disabled</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <h3>Four Column</h3>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control designation-input" aria-describedby="validationServer03Feedback" value="UI Designer" required />
-                                            <label for="validationServer03" class="form-label">Designation</label>
-                                            <div class="form-text designation-text">Enter Valid data</div>
+                                <div class="col-md-12">
+                                    <h3>Four Column</h3>
+                                    <div class="row four-column">
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control designation-input" aria-describedby="validationServer03Feedback" value="UI Designer" required />
+                                                <label for="validationServer03" class="form-label">Designation</label>
+                                                <div class="form-text designation-text">Enter Valid data</div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control name-input" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Name" required />
-                                            <label for="validationServer03" class="form-label">Name</label>
-                                            <div class="form-text name-text">Enter your full Name as per ID</div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control name-input" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Name" required />
+                                                <label for="validationServer03" class="form-label">Name</label>
+                                                <div class="form-text name-text">Enter your full Name as per ID</div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingUserName" placeholder="johndoe" />
-                                            <label for="floatingUserName">Username</label>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="floatingUserName" placeholder="johndoe" />
+                                                <label for="floatingUserName">Username</label>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col">
-                                        <div class="form-floating">
-                                            <select class="form-select" aria-label="Default">
-                                  <option selected>Dropdown</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                                            <label for="">Dropdown</label>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form-floating">
+                                                <select class="form-select" aria-label="Default">
+                                                    <option selected>Dropdown</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <label for="">Dropdown</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12 other-design">
-                                <h3>Other Design Elements</h3>
-                                <h4>File upload</h4>
-                                <div class="mb-3">
-                                    <input type='file' id="getFile" class="actual-btn" hidden>
-                                    <button class="upload-btn" for="getFile" type="button"><img src="images/cloud-upload-icon.svg" onclick="document.getElementById('getFile').click()" alt="" />Upload</button>
-                                    <span id="fileName">No file choosen</span>
-                                </div>
-                                <h4>Radio Buttons</h4>
-                                <div class="form-check radio-btns">
-                                    <input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                <div class="col-md-12 other-design">
+                                    <h3>Other Design Elements</h3>
+                                    <h4>File upload</h4>
+                                    <div class="mb-3">
+                                        <input type='file' id="getFile" class="actual-btn" hidden>
+                                        <button class="upload-btn" for="getFile" type="button"><img src="images/cloud-upload-icon.svg" onclick="document.getElementById('getFile').click()" alt="" />Upload</button>
+                                        <span id="fileName">No file choosen</span>
+                                    </div>
+                                    <h4>Radio Buttons</h4>
+                                    <div class="form-check radio-btns">
+                                        <input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
                                       Option 1
                                     </label>
-                                </div>
-                                <div class="form-check radio-btns">
-                                    <input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
+                                    </div>
+                                    <div class="form-check radio-btns">
+                                        <input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
                                         Option 2
                                     </label>
-                                </div>
-                                <h4>Checkbox</h4>
-                                <div class="form-check radio-btns">
-                                    <input class="radio-btn" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    </div>
+                                    <h4>Checkbox</h4>
+                                    <div class="form-check radio-btns">
+                                        <input class="radio-btn" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
                                       Option 1
                                     </label>
-                                </div>
-                                <div class="form-check radio-btns">
-                                    <input class="radio-btn" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
+                                    </div>
+                                    <div class="form-check radio-btns">
+                                        <input class="radio-btn" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
                                         Option 2
                                     </label>
-                                </div>
-                                <h4>Snackbar</h4>
-                                <div class="row snackbar gx-0">
-                                    <div class="col error-snack">
-                                        <img src="images/error-icon.svg" alt="">
-                                        <p>This is an error message</p>
                                     </div>
-                                    <div class="col info-snack ">
-                                        <img src="images/info-icon.svg" alt="">
-                                        <p>This is an information message</p>
+                                    <h4>Snackbar</h4>
+                                    <div class=" snackbar gx-0">
+                                        <div class=" error-snack">
+                                            <img src="images/error-icon.svg" alt="">
+                                            <p>This is an error message</p>
+                                        </div>
+                                        <div class=" info-snack ">
+                                            <img src="images/info-icon.svg" alt="">
+                                            <p>This is an information message</p>
+                                        </div>
+                                        <!-- </div>
+                                    <div class="row snackbar gx-0"> -->
+                                        <div class=" warning-snack">
+                                            <img src="images/warning-icon.svg" alt="">
+                                            <p>This is warning message</p>
+                                        </div>
+                                        <div class="success-snack">
+                                            <img src="images/success-icon.svg" alt="">
+                                            <p>This is success message</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row snackbar gx-0">
-                                    <div class="col warning-snack">
-                                        <img src="images/warning-icon.svg" alt="">
-                                        <p>This is warning message</p>
+                                    <h4>Call to action</h4>
+                                    <button class="btn-bg">Primary</button>
+                                    <button class="btn-bg btn-trans">Secondary</button>
+                                    <h4>Tabs</h4>
+                                    <div class="tabs d-flex">
+                                        <p class="tab active-tab underline">Tab 1</p>
+                                        <p class="tab">Tab 2</p>
+                                        <p class="tab">Tab 3</p>
                                     </div>
-                                    <div class="col success-snack">
-                                        <img src="images/success-icon.svg" alt="">
-                                        <p>This is success message</p>
+                                    <hr>
+                                    <div class="tab-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                            sheets containing
+                                        </p>
                                     </div>
+
+
                                 </div>
-                                <h4>Call to action</h4>
-                                <button class="btn-bg">Primary</button>
-                                <button class="btn-bg btn-trans">Secondary</button>
-                                <h4>Tabs</h4>
-                                <div class="tabs d-flex">
-                                    <p class="tab active-tab underline">Tab 1</p>
-                                    <p class="tab">Tab 2</p>
-                                    <p class="tab">Tab 3</p>
-                                </div>
-                                <hr>
-                                <div class="tab-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                                        sheets containing
-                                    </p>
-                                </div>
-                            </div>
+
+                        </div>
+
+                        </form>
                     </div>
                 </div>
-
             </div>
-
-            </form>
         </div>
-    </div>
-    </div>
-    </div>
-    <script src="js/inner.js"></script>
+        <script src="js/inner.js"></script>
 </body>
 
 </html>

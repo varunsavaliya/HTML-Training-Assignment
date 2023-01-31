@@ -12,6 +12,11 @@ p {
     margin: 0 18px 0 0;
 }
 
+.left button {
+    border: none;
+    background-color: #ffffff;
+}
+
 .d-flex .left p,
 .d-flex .right p {
     display: inline;
@@ -19,7 +24,24 @@ p {
 }
 
 .menu-icon {
-    margin: 0 25px 0 0;
+    /* margin: 0 25px 0 0; */
+    cursor: pointer;
+}
+
+.left .hamberger .closeIcon {
+    display: none;
+}
+
+.menu {
+    transform: translateX(-200%);
+    display: none;
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+.showMenu {
+    display: block;
+    transform: translateX(0);
+    /* transition: transform 0.5s ease-in-out; */
 }
 
 .header-logo {
@@ -43,8 +65,8 @@ p {
 
 
 /* .side-nav {
-    display: inline;
-    /* width: 205px; */
+display: inline;
+/* width: 205px; */
 
 
 /* }  */
@@ -61,6 +83,7 @@ p {
 
 .side-nav ul li {
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .side-nav ul li:first-child {
@@ -99,11 +122,20 @@ p {
     color: #c8242f;
 }
 
+.form-control {
+    display: inline;
+}
+
 .analysis {
     background-color: #fafafa;
     padding: 29px 0px 0 0px;
     margin-top: 23px;
     margin-left: -86px;
+}
+
+.analysis-big-design {
+    margin-top: 7px;
+    margin-left: 8px;
 }
 
 .analysis h1 {
@@ -150,6 +182,10 @@ input {
     color: #ADADAD;
 }
 
+.form-text {
+    font-size: .8em;
+}
+
 .upload-btn {
     display: inline;
     width: 128px;
@@ -183,20 +219,21 @@ input {
     display: inline;
 }
 
-.form-check :checked {
-    color: #C8242F;
+:checked {
+    color: #C8242F !important;
     border-color: #C8242F;
     background-color: #C8242F;
 }
 
-input[type=radio] {
+input[type="radio"] {
     color: #C8242F !important;
-    margin-right: 11px;
 }
 
 .snackbar {
-    column-gap: 2rem;
-    margin-bottom: 20px;
+    grid-gap: 1rem;
+    /* margin-bottom: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .snackbar img {
@@ -301,4 +338,132 @@ hr {
 .tab-text p {
     color: #3E3E3E;
     font-size: 14px;
+}
+
+#myTab .nav-item a {
+    color: #adadad;
+}
+
+#myTab .nav-item .active {
+    color: #c8242f;
+    border: none;
+    border-bottom: 3px solid #c8242f;
+}
+
+.tab-content p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #3e3e3e;
+}
+
+.tabs div ul li {
+    margin-top: 0 !important;
+}
+
+.tabs {
+    margin-top: 34px;
+}
+
+.tabheading {
+    font-size: 18px;
+}
+
+.activetab {
+    color: #c8242f;
+}
+
+.nav-link {
+    color: #adadad;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #c8242f;
+    border-bottom: solid 1px #c8242f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+@media screen and (max-width:991px) {
+    .header-logo {
+        width: 143px;
+        margin: 0 42px 0 0;
+    }
+    .d-flex .left p,
+    .d-flex .right p {
+        font-size: 14px;
+    }
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .snackbar div p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header-logo {
+        width: 134px;
+        margin: 0 19px 0 0;
+    }
+    .header-logo {
+        width: 134px;
+        margin: 0 19px 0 0;
+    }
+    .menu-icon {
+        width: 20px;
+    }
+    .d-flex .left p,
+    .d-flex .right p {
+        display: none;
+    }
+    .right img:first-child {
+        width: 19px;
+    }
+    .right .profile-image {
+        width: 39px;
+        margin: 0 -7px 0 12px;
+    }
+    .third-column div {
+        margin-bottom: 2%;
+    }
+    .four-column .form-floating {
+        margin-bottom: 4%;
+    }
+    .four-column .form-floating div {
+        margin-bottom: 4%;
+    }
+    .snackbar {
+        grid-gap: 1rem;
+        /* margin-bottom: 20px; */
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:487px) {
+    .upload-btn {
+        width: 118px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width:486px) {
+    .upload-btn {
+        width: 108px;
+        height: 34px;
+        margin-right: 9px;
+    }
+    .other-design div span {
+        font-size: 13px;
+    }
+    .snackbar img {
+        width: 9%;
+    }
+    .snackbar div p {
+        font-size: 13px;
+    }
+    .btn-bg {
+        padding: 4px 15px;
+    }
 }
