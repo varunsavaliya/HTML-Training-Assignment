@@ -258,11 +258,21 @@ input[type=radio] {
     margin-right: 10px;
 }
 
+.btn-bg:hover {
+    background-color: #ffffff;
+    color: #C8242F;
+}
+
 .btn-trans {
     background-color: #ffffff;
     border: 1px solid #C8242F;
     color: #C8242F;
     display: inline;
+}
+
+.btn-trans:hover {
+    background-color: #C8242F;
+    color: #ffffff;
 }
 
 .tabs .tab {

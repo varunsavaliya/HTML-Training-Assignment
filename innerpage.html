@@ -209,9 +209,9 @@
                                 <h3>Other Design Elements</h3>
                                 <h4>File upload</h4>
                                 <div class="mb-3">
-                                    <button class="upload-btn" onclick="document.getElementById('getFile').click()"><img src="images/cloud-upload-icon.svg" alt="" />Upload</button>
-                                    <input type='file' id="getFile" style="display:none">
-                                    <p>No file choosen</p>
+                                    <input type='file' id="getFile" class="actual-btn" hidden>
+                                    <button class="upload-btn" for="getFile" type="button"><img src="images/cloud-upload-icon.svg" onclick="document.getElementById('getFile').click()" alt="" />Upload</button>
+                                    <span id="fileName">No file choosen</span>
                                 </div>
                                 <h4>Radio Buttons</h4>
                                 <div class="form-check radio-btns">
@@ -287,7 +287,7 @@
     </div>
     </div>
     </div>
-    <!-- <script src="js/dashboard.js"></script> -->
+    <script src="js/inner.js"></script>
 </body>
 
 </html>

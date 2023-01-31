@@ -17,7 +17,7 @@ for (let i = 0; i < btns.length; i++) {
 // toggle menu and dashboard grid 
 
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
+// const menuItems = document.querySelectorAll(".menuItem");
 const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menu-icon");
@@ -46,4 +46,5 @@ function openCloseMenu() {
     }
 }
 
-let on = document.querySelector(".on");
+// upload name showing functionality
+
